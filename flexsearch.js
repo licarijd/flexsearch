@@ -2146,6 +2146,9 @@
                         if(key(obj)){
 
                             results[count++] = obj;
+                            if(limit && (count === limit)){
+                                break;
+                            }
                         }
                     }
 
